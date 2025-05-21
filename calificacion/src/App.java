@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -9,13 +10,12 @@ public class App {
         float calificacion, suma = 0, promedio;
     
         for (int i = 1; i <= 3; i++) {
-            System.out.println("Ingresa Calificación "+i);
-            calificacion = read.nextFloat();
+            calificacion = Float.parseFloat(JOptionPane.showInputDialog("Ingresa la calificacion: "));
             suma = suma + calificacion;
         }
 
         promedio = (suma / 3);
-        System.out.println("EL promedio es: "+ promedio);
+        JOptionPane.showMessageDialog(null, "EL promedio es: "+ promedio);
 
     }
 }
