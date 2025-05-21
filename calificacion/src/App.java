@@ -8,21 +8,14 @@ public class App {
 
         float calificacion, suma = 0, promedio;
     
-
-
-        for (int i = 0; i < 3; i++) {
+        for (int i = 1; i <= 3; i++) {
             System.out.println("Ingresa Calificación "+i);
             calificacion = read.nextFloat();
-            suma =+ calificacion;
+            suma = suma + calificacion;
         }
 
         promedio = (suma / 3);
         System.out.println("EL promedio es: "+ promedio);
-
-
-        
-        
-
 
     }
 }
